@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>NordVault GCC Engine</title>
+<title>NordVault Brand Engine</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -11,37 +11,27 @@
 
 <div class="container">
 
-  <h1>NordVault GCC Engine</h1>
+  <h1>NordVault Employer Brand Engine</h1>
 
   <div class="top-section">
 
-    <!-- LEFT SIDE -->
+    <!-- LEFT PANEL -->
     <div class="left-panel">
 
-      <h3 class="subtitle">Employer Brand Index</h3>
+      <h3 class="subtitle">Employer Brand Strength Index</h3>
       <canvas id="gaugeChart"></canvas>
+
+      <p class="desc">
+        Composite score driven by Awareness, Engagement & Conversion
+      </p>
 
       <div class="metrics">
         <div class="card">
           <p id="brandIndex">50%</p>
-          <span>Brand</span>
-        </div>
-        <div class="card">
-          <p id="cph">₹10000</p>
-          <span>Cost/Hire</span>
-        </div>
-        <div class="card">
-          <p id="offerRate">40%</p>
-          <span>Offer %</span>
+          <span>Brand Index</span>
         </div>
       </div>
 
-    </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="right-panel">
-      <h3>Budget Curve</h3>
-      <canvas id="budgetChart"></canvas>
     </div>
 
   </div>
@@ -50,45 +40,25 @@
   <div class="controls">
 
     <div class="control">
-      <label>Branding <span id="brandingVal">50</span></label>
+      <label>Branding Campaigns <span id="brandingVal">50</span></label>
       <input type="range" min="0" max="100" value="50" id="branding">
     </div>
 
     <div class="control">
-      <label>Compensation <span id="compVal">50</span></label>
-      <input type="range" min="0" max="100" value="50" id="comp">
-    </div>
-
-    <div class="control">
-      <label>VIP Funnel <span id="vipVal">50</span></label>
-      <input type="range" min="0" max="100" value="50" id="vip">
-    </div>
-
-    <div class="control">
-      <label>Campus <span id="campusVal">50</span></label>
+      <label>Campus Presence <span id="campusVal">50</span></label>
       <input type="range" min="0" max="100" value="50" id="campus">
     </div>
 
     <div class="control">
-      <label>Perks <span id="perksVal">50</span></label>
-      <input type="range" min="0" max="100" value="50" id="perks">
+      <label>VIP Events & PR <span id="vipVal">50</span></label>
+      <input type="range" min="0" max="100" value="50" id="vip">
     </div>
 
-  </div>
+    <div class="control">
+      <label>Digital Engagement <span id="engagementVal">50</span></label>
+      <input type="range" min="0" max="100" value="50" id="engagement">
+    </div>
 
-  <!-- ASSUMPTIONS -->
-  <div class="assumptions">
-    <select id="curve">
-      <option value="linear">Linear Hiring</option>
-      <option value="front">Front Loaded</option>
-      <option value="back">Back Loaded</option>
-    </select>
-
-    <select id="market">
-      <option value="real">Realistic Market</option>
-      <option value="easy">Easy Market</option>
-      <option value="hard">Aggressive Market</option>
-    </select>
   </div>
 
 </div>
